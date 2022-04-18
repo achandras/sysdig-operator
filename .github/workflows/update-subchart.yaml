@@ -78,6 +78,7 @@ jobs:
           branch: ${{ steps.set_tag.outputs.chart_tag }}
           title: Update chart to ${{ steps.set_tag.outputs.chart_tag }}
           commit-message: Update charts submodule to ${{ steps.set_tag.outputs.chart_tag }}
+          labels: automerge
       - id: automerge
         name: Automerge
         uses: "pascalgn/automerge-action@v0.15.2"
