@@ -87,5 +87,5 @@ jobs:
         uses: "pascalgn/automerge-action@v0.15.2"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          PULL_REQUEST_TARGET: "${{ steps.create_pull_request.outputs.pull-request-number }}"
+          PULL_REQUEST: "${{ steps.create_pull_request.outputs.pull-request-number }}"
           LOG: "TRACE"
