@@ -75,3 +75,4 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           branch: ${{ steps.set_tag.outputs.chart_tag }}
+          title: "Update chart to ${{ steps.set_tag.outputs.chart_tag }}"
