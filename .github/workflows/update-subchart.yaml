@@ -79,11 +79,8 @@ jobs:
           title: Update chart to ${{ steps.set_tag.outputs.chart_tag }}
           commit-message: Update charts submodule to ${{ steps.set_tag.outputs.chart_tag }}
           labels: automerge
-      - name: Sleep
-        run: |
-          sleep 10
-      - id: automerge
-        name: Automerge
+      - name: Automerge
+        id: automerge
         uses: "pascalgn/automerge-action@v0.15.2"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
