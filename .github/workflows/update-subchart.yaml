@@ -88,4 +88,4 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PULL_REQUEST_TARGET: "${{ steps.create_pull_request.outputs.pull-request-number }}"
-          LOG: "DEBUG"
+          LOG: "TRACE"
